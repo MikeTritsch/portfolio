@@ -5,6 +5,8 @@
   border: red 2px solid;
 }
 
+/* ENTRY PAGE */
+
 body {
   margin: 0;
   display: flex;
@@ -62,4 +64,27 @@ body {
   font-size: 60vw;
   font-weight: 800;
   -webkit-text-fill-color: transparent;
+}
+
+.enter-btn {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 200px;
+  border-radius: 10px;
+  font-size: 30px;
+  border: white solid 2px;
+  color: white;
+  background-color: transparent;
+  z-index: 2;
+}
+
+.enter-btn:hover {
+  transition: background-color 2.5s;
+  background-color: white;
+  cursor: pointer;
+  color: black;
 }
