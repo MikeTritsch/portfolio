@@ -44,14 +44,13 @@ body {
   background: url("./assets/images/denver.jpg") no-repeat center center / cover;
   background-clip: text !important;
   -webkit-background-clip: text !important;
-  color: #000;
   font-size: 50vw;
   font-weight: 800;
   -webkit-text-fill-color: transparent;
 }
 
 .btn-wrapper {
-  border: red 2px solid;
+  /* border: red 2px solid; */
   height: 110vh;
 }
 
