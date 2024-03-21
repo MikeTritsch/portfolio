@@ -6,19 +6,21 @@ const Home = () => {
 
   const handleEnterClick = () => {
     setShowEnterButton(false);
-    const letterM = document.querySelector('.letter');
-    if (letterM) {
-      letterM.style.transition = 'opacity 2s ease';
-      letterM.style.opacity = '0';
+
+    // Fade out the background image
+    const bgOverlay = document.querySelector('.background-overlay');
+    if (bgOverlay) {
+      bgOverlay.style.transition = 'opacity 2s ease';
+      bgOverlay.style.opacity = '0';
     }
-    setTimeout(() => {
-      setShowLetter(false);
-    }, 2000);
   };
 
   return (
     <>
-      <div className="dark-bg"></div>
+      <div className="dark-bg">
+        {/* Background overlay to fade out */}
+        <div className="background-overlay"></div>
+      </div>
       {showEnterButton && (
         <div className="btn-wrapper">
           <button className="enter-btn" onClick={handleEnterClick}>Enter</button>
