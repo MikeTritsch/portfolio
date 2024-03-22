@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: red 2px solid;
+  /* border: red 2px solid; */
 }
 
 /* ENTRY PAGE */
@@ -93,6 +93,19 @@ body {
   color: white;
 }
 
+/* Footer */
+
+.footer {
+  position: absolute;
+  top: 1800px;
+  /* left: 0; */
+  /* width: 100%; */
+  background-color: #333; /* Adjust background color as needed */
+  color: white; /* Adjust text color as needed */
+  text-align: center;
+  padding: 10px; /* Adjust padding as needed */
+}
+
 /* NAV LIST */
 /* !!!! SHOULD ALL BE LINKS, WILL COME BACK TO THAT */
 
@@ -109,6 +122,11 @@ body {
 
 .nav-list-item {
   padding: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
 }
 
 /* ABOUT */
