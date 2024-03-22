@@ -161,3 +161,11 @@ body {
 .about-text:hover {
   cursor: pointer;
 }
+
+.headline {
+  position: absolute;
+  text-align: center;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+}

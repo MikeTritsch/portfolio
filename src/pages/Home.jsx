@@ -9,12 +9,14 @@ const Home = () => {
   const [showNav, setShowNav] = useState(false);
   const [showAbout, setShowAbout] = useState(false);
   const [showFooter, setShowFooter] = useState(false);
+  const [showHeadline, setShowHeadline] = useState(false);
 
   const handleEnterClick = () => {
     setShowEnterButton(false);
     setShowNav(true);
     setShowAbout(true);
     setShowFooter(true);
+    setShowHeadline(true);
 
     // Fade out the background image
     const bgOverlay = document.querySelector('.background-overlay');
@@ -36,6 +38,9 @@ const Home = () => {
         </div>
       )}
       {showLetter && <div className="letter">M</div>}
+      <Fade triggerOnce={true}>
+      {showHeadline && <h1 className='headline'>Full Stack Developer | Musician | Graphic Designer</h1>}
+      </Fade>
       <Fade triggerOnce={true}>
         {showNav && (<Nav/>)};
       </Fade>

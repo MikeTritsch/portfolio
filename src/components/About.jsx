@@ -6,8 +6,8 @@ const About = () => {
       <Fade triggerOnce={true}>
       <div className="about-text" id="about">
         <p>
-          My name is Mike Tritsch -think of it like Treech- and I am a
-          multi-faceted musician and junior developer. I absolutely love
+          <strong>My name is Mike Tritsch -think of it like Treech- and I am a
+          multi-faceted musician and full-stack developer.</strong> I absolutely love
           learning new things, which is why I decided to start my journey into
           the world of code. I have a wide array -pun-intended- of experience
           across the music industry from journalism to performance. I've shared
