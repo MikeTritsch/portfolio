@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className="adjust-height about-text">
       <Fade triggerOnce={true}>
-      <div className="about-text">
+      <div className="about-text" id="about">
         <p>
           My name is Mike Tritsch -think of it like Treech- and I am a
           multi-faceted musician and junior developer. I absolutely love

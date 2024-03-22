@@ -51,7 +51,8 @@ body {
 
 .letter {
   display: grid;
-  z-index: 1;
+  /* I guess I don't need this? */
+  /* z-index: 1; */
   position: absolute;
   top: 0;
   left: 0;
@@ -102,18 +103,12 @@ body {
 }
 
 .nav-list {
-  opacity: 1;
   margin: 10px;
   list-style: none;
-  z-index: 4;
 }
 
 .nav-list-item {
   padding: 10px;
-}
-
-.nav-link:hover {
-  color: red; /* Change link color on hover */
 }
 
 /* ABOUT */
