@@ -34,7 +34,7 @@ const Home = () => {
         </div>
       )}
       {showLetter && <div className="letter">M</div>}
-      <Fade>
+      <Fade triggerOnce={true}>
         {showNav && (<Nav/>)};
       </Fade>
 

@@ -3,7 +3,7 @@ import { Fade } from 'react-awesome-reveal';
 const About = () => {
   return (
     <div className="adjust-height about-text">
-      <Fade>
+      <Fade triggerOnce={true}>
       <div className="about-text">
         <p>
           My name is Mike Tritsch -think of it like Treech- and I am a
