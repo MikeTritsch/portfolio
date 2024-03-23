@@ -1,13 +1,17 @@
-import Home from './pages/Home'
-import './App.css'
+import Home from "./pages/Home";
+import Nav from "./components/Nav";
+import { Outlet } from "react-router-dom";
+
+import "./App.css";
+import Projects from "./pages/Projects";
 
 function App() {
-
   return (
     <>
-      <Home />
+      <Nav />
+      <Outlet />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
