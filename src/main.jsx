@@ -5,6 +5,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
 import Home from "./pages/Home.jsx";
 import Projects from './pages/Projects.jsx';
+import Music from "./pages/Music.jsx";
+import Design from "./pages/Design.jsx";
 
 import "./index.css";
 
@@ -21,6 +23,14 @@ const router = createBrowserRouter([
       {
         path: '/projects',
         element: <Projects />
+      },
+      {
+        path: '/music',
+        element: <Music />
+      },
+      {
+        path: '/design',
+        element: <Design />
       }
     ]
   },

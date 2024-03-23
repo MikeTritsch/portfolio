@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Nav from "../components/Nav";
 import About from "../components/About";
 import { Fade } from "react-awesome-reveal";
@@ -47,9 +47,7 @@ const Home = () => {
           </h1>
         )}
       </Fade>
-      <Fade triggerOnce={true}>
-        {showNav && <Nav />}
-      </Fade>
+      <Fade triggerOnce={true}>{showNav && <Nav />}</Fade>
       {showFooter && <footer className="footer">© Michael Tritsch 2023</footer>}
 
       {showAbout && <About />}
