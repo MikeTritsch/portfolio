@@ -10,6 +10,18 @@ const Home = () => {
   const [showAbout, setShowAbout] = useState(false);
   const [showFooter, setShowFooter] = useState(false);
   const [showHeadline, setShowHeadline] = useState(null);
+  const [overlay, setOverlay] = useState(true);
+
+  useEffect(() => {
+    const entered = sessionStorage.getItem("entered");
+
+    if (entered === "true") {
+      setShowEnterButton(false);
+      setOverlay(false);
+      setShowAbout(true);
+      setShowNav(true);
+    }
+  }, []);
 
   const handleEnterClick = () => {
     setShowEnterButton(false);
@@ -25,13 +37,15 @@ const Home = () => {
       bgOverlay.style.transition = "opacity 1s ease";
       bgOverlay.style.opacity = "0";
     }
+
+    sessionStorage.setItem("entered", "true");
   };
 
   return (
     <>
-      <div className="dark-bg">
+      {overlay && (<div className="dark-bg">
         <div className="background-overlay"></div>
-      </div>
+      </div>)}
       {showEnterButton && (
         <div className="btn-wrapper">
           <button className="enter-btn" onClick={handleEnterClick}>
@@ -47,7 +61,9 @@ const Home = () => {
           </h1>
         )}
       </Fade>
-      <Fade triggerOnce={true}>{showNav && <Nav />}</Fade>
+      <Fade triggerOnce={true}>
+        {showNav && <Nav />}
+      </Fade>
       {showFooter && <footer className="footer">© Michael Tritsch 2023</footer>}
 
       {showAbout && <About />}

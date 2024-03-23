@@ -6,9 +6,9 @@ import "./App.css";
 import Projects from "./pages/Projects";
 
 function App() {
+
   return (
     <>
-      <Nav />
       <Outlet />
     </>
   );
