@@ -20,6 +20,8 @@ const Home = () => {
       setOverlay(false);
       setShowAbout(true);
       setShowNav(true);
+      setShowFooter(true);
+      setShowHeadline(true);
     }
   }, []);
 
@@ -30,7 +32,6 @@ const Home = () => {
     setShowFooter(true);
     setShowHeadline(true);
 
-    // Fade out the background image
     const bgOverlay = document.querySelector(".background-overlay");
 
     if (bgOverlay) {

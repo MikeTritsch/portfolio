@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: red 2px solid;
+  /* border: red 2px solid; */
 }
 
 /* ENTRY PAGE */
@@ -169,4 +169,120 @@ body {
   bottom: 100px;
   left: 0;
   right: 0;
+}
+
+.swiper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 600px;
+  height: 400px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.swiper-slide:nth-child(1n) {
+  background-color: rgb(206, 17, 17);
+  background: url("./assets/images/brew.jpg") no-repeat center center / cover;
+  color: black;
+}
+
+.swiper-slide:nth-child(2n) {
+  background-color: rgb(0, 140, 255);
+  background: url("./assets/images/watch.jpg") no-repeat center center / cover;
+  color: rgb(245, 0, 0);
+}
+
+.swiper-slide:nth-child(2n) li {
+  background-color: rgb(255, 255, 255);
+  color: red;
+  box-shadow: 5px 5px rgb(255, 0, 0);
+}
+
+.swiper-slide:nth-child(3n) {
+  background-color: rgb(10, 184, 111);
+}
+
+.swiper-slide:nth-child(4n) {
+  background-color: rgb(211, 122, 7);
+}
+
+.swiper-slide:nth-child(5n) {
+  background-color: rgb(118, 163, 12);
+}
+
+.swiper-slide:nth-child(6n) {
+  background-color: rgb(180, 10, 47);
+}
+
+.swiper-slide:nth-child(7n) {
+  background-color: rgb(35, 99, 19);
+}
+
+.swiper-slide:nth-child(8n) {
+  background-color: rgb(0, 68, 255);
+}
+
+.swiper-slide:nth-child(9n) {
+  background-color: rgb(218, 12, 218);
+}
+
+.swiper-slide:nth-child(10n) {
+  background-color: rgb(54, 94, 77);
+}
+
+.page-title {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 78px;
+  text-align: center;
+  font-size: 100px;
+  border: blue 2px solid;
+}
+
+.project-info {
+  display: grid;
+}
+
+.project-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-align: center;
+  padding: 10px;
+}
+
+.project-description {
+  position: absolute;
+  font-size: 15px;
+  left: 0;
+  right: 0;
+  top: 50px;
+  text-align: center;
+  padding: 10px;
+}
+
+.languages li {
+  font-size: 10px;
+  list-style: none;
+  display: inline;
+  position: relative;
+  top: 70px;
+  margin: 10px;
+  padding: 10px;
+  border: black 2px solid;
+  box-shadow: 5px 5px rgb(252, 252, 252);
+  box-shadow: inset;
 }
