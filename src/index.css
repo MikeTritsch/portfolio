@@ -183,10 +183,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 18px;
   font-size: 22px;
   font-weight: bold;
   color: #fff;
+  border: 2px solid black;
 }
 
 .swiper-slide:nth-child(1n) {
@@ -209,10 +209,24 @@ body {
 
 .swiper-slide:nth-child(3n) {
   background-color: rgb(10, 184, 111);
+  background: url("./assets/images/tech.jpg") no-repeat center center / cover;
+}
+
+.swiper-slide:nth-child(3n) li {
+  background-color: #cef7e1;
 }
 
 .swiper-slide:nth-child(4n) {
   background-color: rgb(211, 122, 7);
+  color: black;
+  background: url("./assets/images/weather.jpg") no-repeat center center / cover;
+}
+
+.swiper-slide:nth-child(4n) li {
+  background-color: #33bedd;
+  color: white;
+  box-shadow: 5px 5px rgb(0, 0, 0);
+  
 }
 
 .swiper-slide:nth-child(5n) {
@@ -275,7 +289,7 @@ body {
 }
 
 .languages li {
-  font-size: 10px;
+  font-size: 7px;
   list-style: none;
   display: inline;
   position: relative;
