@@ -2,6 +2,8 @@ import React, { useRef, useState } from "react";
 import watch from "../assets/images/watch2.jpg";
 import brew from "../assets/images/brew.jpg";
 import tech from "../assets/images/tech.jpg";
+import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import Nav from "../components/Nav";
 import { Fade } from "react-awesome-reveal";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -36,7 +38,6 @@ const Projects = () => {
           className="mySwiper"
         >
           <SwiperSlide className="watch-togethr">
-            <h1 className="project-title">WatchTogethr</h1>
             <h2 className="project-description"></h2>
             <ul className="languages">
               <li>React</li>
@@ -45,6 +46,11 @@ const Projects = () => {
               <li>Express</li>
               <li>MongoDB</li>
             </ul>
+            <a className="links" href="https://github.com/MikeTritsch/watchtogethr" target="_blank">
+            <FaGithub className="git-icon"/>
+            </a>
+            <FaExternalLinkAlt className="link-icon"/>
+
             <p className="project-bio">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum accumsan tellus, quis malesuada est venenatis sit amet. Ut euismod lacus at nunc posuere, vel fermentum mi suscipit. Duis tristique tellus at ligula pulvinar consequat.
             </p>
