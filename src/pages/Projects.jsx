@@ -2,10 +2,15 @@ import React, { useRef, useState } from "react";
 import watch from "../assets/images/watch2.jpg";
 import brew from "../assets/images/brew.jpg";
 import tech from "../assets/images/tech.jpg";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { CiLink } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
-import Nav from "../components/Nav";
+import { FaReact } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { FaNodeJs } from "react-icons/fa6";
+import { SiExpress } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
 import { Fade } from "react-awesome-reveal";
+import Nav from "../components/Nav";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -40,19 +45,35 @@ const Projects = () => {
           <SwiperSlide className="watch-togethr">
             <h2 className="project-description"></h2>
             <ul className="languages">
-              <li>React</li>
-              <li>JavaScript</li>
-              <li>Node</li>
-              <li>Express</li>
-              <li>MongoDB</li>
+              <li>
+                React
+                <FaReact />
+              </li>
+              <li>
+                JavaScript
+                <IoLogoJavascript />
+              </li>
+              <li>
+                Node
+                <FaNodeJs />
+              </li>
+              <li>Express <SiExpress/></li>
+              <li>MongoDB <SiMongodb/></li>
             </ul>
-            <a className="links" href="https://github.com/MikeTritsch/watchtogethr" target="_blank">
-            <FaGithub className="git-icon"/>
+            <a
+              className="links"
+              href="https://github.com/MikeTritsch/watchtogethr"
+              target="_blank"
+            >
+              <FaGithub className="git-icon wt-icon-color" />
             </a>
-            <FaExternalLinkAlt className="link-icon"/>
+            <CiLink className="link-icon wt-icon-color" />
 
             <p className="project-bio">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum accumsan tellus, quis malesuada est venenatis sit amet. Ut euismod lacus at nunc posuere, vel fermentum mi suscipit. Duis tristique tellus at ligula pulvinar consequat.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              vestibulum accumsan tellus, quis malesuada est venenatis sit amet.
+              Ut euismod lacus at nunc posuere, vel fermentum mi suscipit. Duis
+              tristique tellus at ligula pulvinar consequat.
             </p>
           </SwiperSlide>
           <SwiperSlide></SwiperSlide>

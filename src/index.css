@@ -206,10 +206,21 @@ body {
 }
 
 .watch-togethr {
-  background: url("./assets/images/watch2.jpg") no-repeat center center / cover;
+  background: url("./assets/images/RedVersion.png") no-repeat center center /
+    cover;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.project-bio {
+  color: black;
+  font-weight: bolder;
+  background-color: rgba(255, 255, 255, 0.478);
+  font-size: 20px;
+  padding: 2px;
+  margin: 7px;
+  border-radius: 10px;
 }
 
 .watch-togethr li {
@@ -221,6 +232,8 @@ body {
   background-color: black;
   color: white;
   visibility: hidden;
+  border-radius: 10px;
+  display: inline-flex;
 }
 
 .watch-togethr:hover li {
@@ -253,9 +266,16 @@ body {
   position: absolute;
   bottom: 5px;
   left: 20px;
-
 }
 
 .links {
   color: black;
+}
+
+.git-icon:hover {
+  filter: drop-shadow(1px 1px 4px #ff0000);
+}
+
+.wt-icon-color:hover {
+  filter: drop-shadow(1px 1px 4px #ff0000);
 }
