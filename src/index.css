@@ -184,12 +184,14 @@ body {
 
 .swiper {
   position: absolute;
-  width: 64%;
+  width: 75%;
+  height: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
   left: 50%;
   top: 60%;
   transform: translate(-50%, -50%);
+  border: solid red 2px;
 }
 
 .swiper-slide {
@@ -197,6 +199,7 @@ body {
   background-size: cover;
   width: 400px;
   height: 400px;
+  border: solid yellow 2px;
 }
 
 .swiper-slide img {
@@ -215,6 +218,8 @@ body {
 
 .project-bio {
   color: black;
+  position: absolute;
+  top: 400px;
   font-weight: bolder;
   background-color: rgba(255, 255, 255, 0.478);
   font-size: 20px;
@@ -225,27 +230,15 @@ body {
 
 .watch-togethr li {
   list-style: none;
+  position: relative;
+  display: inline-block;
   border: solid 2px white;
-  margin: 5px;
+  top: 415px;
   padding: 5px;
-  text-align: center;
+  font-size: small;
   background-color: black;
   color: white;
-  visibility: hidden;
   border-radius: 10px;
-  display: inline-flex;
-}
-
-.watch-togethr:hover li {
-  visibility: visible;
-}
-
-.watch-togethr p {
-  visibility: hidden;
-}
-
-.watch-togethr:hover p {
-  visibility: visible;
 }
 
 .brew {
