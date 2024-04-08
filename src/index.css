@@ -245,6 +245,27 @@ body {
   background: url("./assets/images/brew.jpg") no-repeat center center / cover;
 }
 
+.brew {
+  background: url("./assets/images/brewexp.png") no-repeat center center /
+    cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brew li {
+  list-style: none;
+  position: relative;
+  display: inline-block;
+  border: solid 2px white;
+  top: 415px;
+  padding: 5px;
+  font-size: small;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
 .git-icon {
   width: 45px;
   height: 45px;

@@ -43,7 +43,6 @@ const Projects = () => {
           className="mySwiper"
         >
           <SwiperSlide className="watch-togethr">
-            <h2 className="project-description"></h2>
             <ul className="languages">
               <li>
                 React
@@ -76,7 +75,39 @@ const Projects = () => {
               tristique tellus at ligula pulvinar consequat.
             </p>
           </SwiperSlide>
-          <SwiperSlide></SwiperSlide>
+          <SwiperSlide className="brew">
+            <ul className="languages">
+              <li>
+                React
+                <FaReact />
+              </li>
+              <li>
+                JavaScript
+                <IoLogoJavascript />
+              </li>
+              <li>
+                Node
+                <FaNodeJs />
+              </li>
+              <li>Express <SiExpress/></li>
+              <li>MongoDB <SiMongodb/></li>
+            </ul>
+            <a
+              className="links"
+              href="https://github.com/MikeTritsch/watchtogethr"
+              target="_blank"
+            >
+              <FaGithub className="git-icon wt-icon-color" />
+            </a>
+            <CiLink className="link-icon wt-icon-color" />
+
+            <p className="project-bio">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              vestibulum accumsan tellus, quis malesuada est venenatis sit amet.
+              Ut euismod lacus at nunc posuere, vel fermentum mi suscipit. Duis
+              tristique tellus at ligula pulvinar consequat.
+            </p>
+          </SwiperSlide>
           <SwiperSlide></SwiperSlide>
           <SwiperSlide>
             <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
