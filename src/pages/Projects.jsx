@@ -1,7 +1,4 @@
 import React, { useRef, useState } from "react";
-import watch from "../assets/images/watch2.jpg";
-import brew from "../assets/images/brew.jpg";
-import tech from "../assets/images/tech.jpg";
 import { CiLink } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
@@ -108,24 +105,104 @@ const Projects = () => {
               tristique tellus at ligula pulvinar consequat.
             </p>
           </SwiperSlide>
-          <SwiperSlide></SwiperSlide>
-          <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+          <SwiperSlide className="tech">
+          <ul className="languages">
+              <li>
+                React
+                <FaReact />
+              </li>
+              <li>
+                JavaScript
+                <IoLogoJavascript />
+              </li>
+              <li>
+                Node
+                <FaNodeJs />
+              </li>
+              <li>Express <SiExpress/></li>
+              <li>MongoDB <SiMongodb/></li>
+            </ul>
+            <a
+              className="links"
+              href="https://github.com/MikeTritsch/watchtogethr"
+              target="_blank"
+            >
+              <FaGithub className="git-icon wt-icon-color" />
+            </a>
+            <CiLink className="link-icon wt-icon-color" />
+
+            <p className="project-bio">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              vestibulum accumsan tellus, quis malesuada est venenatis sit amet.
+              Ut euismod lacus at nunc posuere, vel fermentum mi suscipit. Duis
+              tristique tellus at ligula pulvinar consequat.
+            </p>
           </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+          <SwiperSlide className="weather">
+          <ul className="languages">
+              <li>
+                React
+                <FaReact />
+              </li>
+              <li>
+                JavaScript
+                <IoLogoJavascript />
+              </li>
+              <li>
+                Node
+                <FaNodeJs />
+              </li>
+              <li>Express <SiExpress/></li>
+              <li>MongoDB <SiMongodb/></li>
+            </ul>
+            <a
+              className="links"
+              href="https://github.com/MikeTritsch/watchtogethr"
+              target="_blank"
+            >
+              <FaGithub className="git-icon wt-icon-color" />
+            </a>
+            <CiLink className="link-icon wt-icon-color" />
+
+            <p className="project-bio">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              vestibulum accumsan tellus, quis malesuada est venenatis sit amet.
+              Ut euismod lacus at nunc posuere, vel fermentum mi suscipit. Duis
+              tristique tellus at ligula pulvinar consequat.
+            </p>
           </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+          <SwiperSlide className="password">
+          <ul className="languages">
+              <li>
+                React
+                <FaReact />
+              </li>
+              <li>
+                JavaScript
+                <IoLogoJavascript />
+              </li>
+              <li>
+                Node
+                <FaNodeJs />
+              </li>
+              <li>Express <SiExpress/></li>
+              <li>MongoDB <SiMongodb/></li>
+            </ul>
+            <a
+              className="links"
+              href="https://github.com/MikeTritsch/watchtogethr"
+              target="_blank"
+            >
+              <FaGithub className="git-icon wt-icon-color" />
+            </a>
+            <CiLink className="link-icon wt-icon-color" />
+
+            <p className="project-bio">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              vestibulum accumsan tellus, quis malesuada est venenatis sit amet.
+              Ut euismod lacus at nunc posuere, vel fermentum mi suscipit. Duis
+              tristique tellus at ligula pulvinar consequat.
+            </p>
           </SwiperSlide>
         </Swiper>
       </Fade>
