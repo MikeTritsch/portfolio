@@ -366,3 +366,19 @@ body {
 .brew-icon-color:hover {
   filter: drop-shadow(1px 1px 4px #ffc002);
 }
+
+.tech-strong {
+  color: #91f5bc;
+}
+
+.tech-icon-color:hover {
+  filter: drop-shadow(1px 1px 4px #8e8e8e);
+}
+
+.weather-strong {
+  color: #2abddd
+}
+
+.weather-icon-color:hover {
+  filter: drop-shadow(1px 1px 4px white);
+}
