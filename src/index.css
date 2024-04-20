@@ -354,3 +354,15 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.watchtogethr-strong {
+  color: red;
+}
+
+.brew-strong {
+  color: #facf5e
+}
+
+.brew-icon-color:hover {
+  filter: drop-shadow(1px 1px 4px #ffc002);
+}
