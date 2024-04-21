@@ -73,8 +73,13 @@ const Projects = () => {
             >
               <FaGithub className="git-icon wt-icon-color" />
             </a>
-            <CiLink className="link-icon wt-icon-color" />
-
+            <a
+              className="links"
+              href="https://watchtogethr-aeeae66b60e6.herokuapp.com/"
+              target="_blank"
+            >
+              <CiLink className="link-icon wt-icon-color" />
+            </a>
             <p className="project-bio">
               <strong className="watchtogethr-strong">WatchTogethr</strong> is
               an interactive application that allows two users to select movies
@@ -199,28 +204,26 @@ const Projects = () => {
               <CiLink className="link-icon weather-icon-color" />
             </a>
             <p className="project-bio">
-              <strong className="weather-strong">Weather or Not</strong> is a simple weather forecasting application designed using the Open Weather Map API. Users are able to search for a city anywhere in the world and are presented with a six day forecast paired with respective icons.
+              <strong className="weather-strong">Weather or Not</strong> is a
+              simple weather forecasting application designed using the Open
+              Weather Map API. Users are able to search for a city anywhere in
+              the world and are presented with a six day forecast paired with
+              respective icons.
             </p>
           </SwiperSlide>
           <SwiperSlide className="password">
             <ul className="languages">
               <li>
-                React
-                <FaReact />
-              </li>
-              <li>
                 JavaScript
                 <IoLogoJavascript />
               </li>
               <li>
-                Node
-                <FaNodeJs />
+                HTML
+                <FaHtml5 />
               </li>
               <li>
-                Express <SiExpress />
-              </li>
-              <li>
-                MongoDB <SiMongodb />
+                CSS
+                <FaCss3 />
               </li>
             </ul>
             <a
@@ -228,15 +231,24 @@ const Projects = () => {
               href="https://github.com/MikeTritsch/watchtogethr"
               target="_blank"
             >
-              <FaGithub className="git-icon wt-icon-color" />
+              <FaGithub className="git-icon pass-icon-color" />
             </a>
-            <CiLink className="link-icon wt-icon-color" />
-
+            <a
+              className="links"
+              href="https://miketritsch.github.io/password-generation-station/"
+              target="_blank"
+            >
+              <CiLink className="link-icon pass-icon-color" />
+            </a>
             <p className="project-bio">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              vestibulum accumsan tellus, quis malesuada est venenatis sit amet.
-              Ut euismod lacus at nunc posuere, vel fermentum mi suscipit. Duis
-              tristique tellus at ligula pulvinar consequat.
+              The{" "}
+              <strong className="pass-strong">
+                Password Generation Station
+              </strong>{" "}
+              is a simplisitc input-based password generator. By answering
+              browser prompts, users have the ability to choose capital or
+              lowercase letters, numbers, and special characters to include in
+              their password.
             </p>
           </SwiperSlide>
         </Swiper>

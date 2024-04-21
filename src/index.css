@@ -177,7 +177,7 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  top: 78px;
+  top: 50px;
   text-align: center;
   font-size: 100px;
 }
@@ -381,4 +381,12 @@ body {
 
 .weather-icon-color:hover {
   filter: drop-shadow(1px 1px 4px white);
+}
+
+.pass-strong {
+  color: #940b2c;
+}
+
+.pass-icon-color:hover {
+  filter: drop-shadow(1px 1px 4px #85c0fc);
 }
