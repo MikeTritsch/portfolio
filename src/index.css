@@ -404,3 +404,33 @@ body {
   height: 500px;
   width: 400px;
 }
+
+.music-info-container {
+  width: 100vw;
+  border: 2px solid blue;
+  position: absolute;
+  display: flex; /* Use Flexbox */
+  justify-content: center; /* Center contents horizontally */
+  text-align: center;
+}
+
+.instruments li,
+.music-tech li {
+  list-style: none;
+  padding: 10px;
+  border: solid 2px white;
+  font-size: small;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+/* Add margin between the lists */
+.instruments {
+  margin-right: 5px;
+}
+
+.list-container {
+  margin: 0 100px; /* Increase margin between the lists */
+}
+
