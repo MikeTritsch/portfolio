@@ -241,6 +241,7 @@ body {
 
 .brew {
   background: url("./assets/images/brew.jpg") no-repeat center center / cover;
+  border: solid 2px #facf5e;
 }
 
 .brew {
@@ -389,4 +390,17 @@ body {
 
 .pass-icon-color:hover {
   filter: drop-shadow(1px 1px 4px #85c0fc);
+}
+
+.playlist-container {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.spotify-playlist {
+  margin-top: 20px;
+  padding: 20px;
+  height: 500px;
+  width: 400px;
 }
