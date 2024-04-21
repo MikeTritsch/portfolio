@@ -392,11 +392,11 @@ body {
   filter: drop-shadow(1px 1px 4px #85c0fc);
 }
 
-.playlist-container {
+/* .playlist-container {
   display: flex;
   justify-content: center;
   width: 100vw;
-}
+} */
 
 .spotify-playlist {
   margin-top: 20px;
@@ -407,7 +407,6 @@ body {
 
 .music-info-container {
   width: 100vw;
-  border: 2px solid blue;
   position: absolute;
   display: flex; /* Use Flexbox */
   justify-content: center; /* Center contents horizontally */
@@ -418,11 +417,13 @@ body {
 .music-tech li {
   list-style: none;
   padding: 10px;
+  margin-bottom: 10px;
   border: solid 2px white;
   font-size: small;
   background-color: black;
   color: white;
   border-radius: 10px;
+
 }
 
 /* Add margin between the lists */
@@ -432,5 +433,23 @@ body {
 
 .list-container {
   margin: 0 100px; /* Increase margin between the lists */
+}
+
+.playlist-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+}
+
+.music-playlist-text-one,
+.music-playlist-text-two {
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.music-playlist-text-one {
+  color: #701808;
 }
 

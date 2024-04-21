@@ -8,60 +8,70 @@ import { PiVinylRecord } from "react-icons/pi";
 import { SiProtools } from "react-icons/si";
 import { GiGClef } from "react-icons/gi";
 
-
-
-
-
-
-
-
 const Music = () => {
   return (
     <>
       <Nav />
       <h1 className="page-title">Music</h1>
 
-      <div className="playlist-container">
-        <Spotify
-          className="spotify-playlist"
-          link="https://open.spotify.com/playlist/000EOmuzrZ7YYAnQ9NTzVD?si=918b6232d65f43ca"
-        />
+      <div class="container">
+        <div class="playlist-container">
+          <div class="playlist-card">
+            <h2 class="music-playlist-text-one">Songs I've played on...</h2>
+            <Spotify
+              className="spotify-playlist"
+              link="https://open.spotify.com/playlist/000EOmuzrZ7YYAnQ9NTzVD?si=918b6232d65f43ca"
+            />
+          </div>
 
-        <Spotify
-          className="spotify-playlist"
-          link="https://open.spotify.com/playlist/2ldcx8tqMeOqfHpkUZqJEq?si=abf8da7bc7c640b6"
-        />
+          <div class="playlist-card">
+            <h2 class="music-playlist-text-two">
+              Artists I've worked or played with...
+            </h2>
+            <Spotify
+              className="spotify-playlist"
+              link="https://open.spotify.com/playlist/2ldcx8tqMeOqfHpkUZqJEq?si=abf8da7bc7c640b6"
+            />
+          </div>
+        </div>
       </div>
 
       <div class="music-info-container">
         <div class="list-container">
           <h2>Instruments</h2>
           <ul class="instruments">
-            <li>Drums
-              <LiaDrumSolid/>
+            <li>
+              Drums
+              <LiaDrumSolid />
             </li>
-            <li>Guitar
-              <PiGuitarThin/>
+            <li>
+              Guitar
+              <PiGuitarThin />
             </li>
-            <li>Bass
-              <GiGuitarBassHead/>
+            <li>
+              Bass
+              <GiGuitarBassHead />
             </li>
-            <li>Vocals
-              <CiMicrophoneOn/>
+            <li>
+              Vocals
+              <CiMicrophoneOn />
             </li>
           </ul>
         </div>
         <div class="list-container">
           <h2>Tech</h2>
           <ul class="music-tech">
-            <li>Logic Pro
-              <PiVinylRecord/>
+            <li>
+              Logic Pro
+              <PiVinylRecord />
             </li>
-            <li>Pro-Tools
-              <SiProtools/>
+            <li>
+              Pro-Tools
+              <SiProtools />
             </li>
-            <li>Notion - Composer
-              <GiGClef/>
+            <li>
+              Notion - Composer
+              <GiGClef />
             </li>
           </ul>
         </div>
